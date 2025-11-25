@@ -28,3 +28,23 @@ export interface Feature {
   description: string;
   icon: React.ReactNode;
 }
+
+export interface CategoryItem {
+  id: string;
+  name: string;
+  description?: string;
+  ingredients: string[];
+  calories: number;
+  nutrition: {
+    protein: number; // grams
+    carbs: number; // grams
+    fat: number; // grams
+  };
+  image?: string;
+}
+
+export interface Category {
+  id: string;
+  title: string;
+  items: CategoryItem[];
+}

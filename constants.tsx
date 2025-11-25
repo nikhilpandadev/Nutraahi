@@ -1,5 +1,5 @@
 import React from 'react';
-import { PlanItem, FAQItem, Testimonial, Feature } from './types';
+import { PlanItem, FAQItem, Testimonial, Feature, Category } from './types';
 import { Leaf, Award, Zap, Heart } from 'lucide-react';
 
 export const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfPlaceholder/viewform"; // Placeholder
@@ -133,5 +133,140 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'Priya',
     role: 'Busy Mom',
     text: "Love that there's zero added sugar. My kids even steal my smoothies!"
+  }
+];
+
+export const CATEGORIES: Category[] = [
+  {
+    id: 'shots',
+    title: 'Metabolic Shots',
+    items: [
+      {
+        id: 'shot-immunity',
+        name: 'Immunity Shot',
+        description: 'Turmeric, citrus and black pepper to support immunity.',
+        ingredients: ['Turmeric', 'Lemon', 'Black pepper', 'Honey'],
+        calories: 25,
+        nutrition: { protein: 0.2, carbs: 6, fat: 0.1 },
+        image: 'https://placehold.co/600x400?text=Immunity+Shot'
+      },
+      {
+        id: 'shot-gut',
+        name: 'Gut-support Shot',
+        description: 'Ginger and aloe based shot to soothe digestion.',
+        ingredients: ['Ginger', 'Aloe vera', 'Lemon'],
+        calories: 20,
+        nutrition: { protein: 0.1, carbs: 4, fat: 0 },
+        image: 'https://placehold.co/600x400?text=Gut+Shot'
+      },
+      {
+        id: 'shot-recovery',
+        name: 'Recovery Shot',
+        description: 'Beetroot and lemon to support recovery and circulation.',
+        ingredients: ['Beetroot', 'Lemon', 'Black salt'],
+        calories: 30,
+        nutrition: { protein: 0.5, carbs: 7, fat: 0.2 },
+        image: 'https://placehold.co/600x400?text=Recovery+Shot'
+      }
+    ]
+  },
+  {
+    id: 'smoothies',
+    title: 'Smoothies & Cold-Pressed Juices',
+    items: [
+      {
+        id: 'smoothie-green',
+        name: 'Green Detox Smoothie',
+        description: 'Spinach, cucumber, apple, with a protein boost.',
+        ingredients: ['Spinach', 'Cucumber', 'Apple', 'Pea protein'],
+        calories: 220,
+        nutrition: { protein: 12, carbs: 28, fat: 4 },
+        image: 'https://placehold.co/600x400?text=Green+Smoothie'
+      },
+      {
+        id: 'smoothie-berry',
+        name: 'Berry Protein Smoothie',
+        description: 'Mixed berries with yogurt and oats for sustained energy.',
+        ingredients: ['Berries', 'Yogurt', 'Oats', 'Whey/Plant protein'],
+        calories: 280,
+        nutrition: { protein: 18, carbs: 36, fat: 6 },
+        image: 'https://placehold.co/600x400?text=Berry+Smoothie'
+      },
+      {
+        id: 'juice-orange',
+        name: 'Cold-pressed Orange Juice',
+        description: 'Fresh orange for vitamin C and quick refreshment.',
+        ingredients: ['Orange'],
+        calories: 110,
+        nutrition: { protein: 2, carbs: 26, fat: 0.3 },
+        image: 'https://placehold.co/600x400?text=Orange+Juice'
+      }
+    ]
+  },
+  {
+    id: 'salads',
+    title: 'Salads & Grain Bowls',
+    items: [
+      {
+        id: 'buddha-quinoa',
+        name: 'Quinoa Buddha Bowl',
+        description: 'Roasted seasonal veggies with quinoa and tahini dressing.',
+        ingredients: ['Quinoa', 'Roasted veggies', 'Tahini', 'Seeds'],
+        calories: 420,
+        nutrition: { protein: 14, carbs: 54, fat: 14 },
+        image: 'https://placehold.co/600x400?text=Quinoa+Bowl'
+      },
+      {
+        id: 'kale-chickpeas',
+        name: 'Kale & Roasted Chickpea Salad',
+        description: 'Crunchy kale with roasted chickpeas and citrus vinaigrette.',
+        ingredients: ['Kale', 'Chickpeas', 'Citrus vinaigrette'],
+        calories: 350,
+        nutrition: { protein: 12, carbs: 38, fat: 10 },
+        image: 'https://placehold.co/600x400?text=Kale+Salad'
+      },
+      {
+        id: 'rice-lentil',
+        name: 'Brown Rice & Lentil Power Bowl',
+        description: 'Hearty bowl for sustained energy with plant protein.',
+        ingredients: ['Brown rice', 'Lentils', 'Greens', 'Pickles'],
+        calories: 480,
+        nutrition: { protein: 18, carbs: 68, fat: 8 },
+        image: 'https://placehold.co/600x400?text=Power+Bowl'
+      }
+    ]
+  },
+  {
+    id: 'snacks',
+    title: 'Protein Snacks & Bites',
+    items: [
+      {
+        id: 'snack-chana',
+        name: 'Roasted Spiced Chana',
+        description: 'Crispy roasted chickpeas with Indian spices.',
+        ingredients: ['Chickpeas', 'Spices', 'Olive oil'],
+        calories: 160,
+        nutrition: { protein: 8, carbs: 18, fat: 6 },
+        image: 'https://placehold.co/600x400?text=Roasted+Chana'
+      },
+      {
+        id: 'snack-energy-bar',
+        name: 'High-Protein Energy Bar',
+        description: 'Oats, nuts and plant protein for a quick boost.',
+        ingredients: ['Oats', 'Nuts', 'Dates', 'Protein powder'],
+        calories: 220,
+        nutrition: { protein: 10, carbs: 26, fat: 8 },
+        image: 'https://placehold.co/600x400?text=Energy+Bar'
+      },
+      {
+        id: 'snack-yogurt',
+        name: 'Greek Yogurt Parfait',
+        description: 'Creamy yogurt with nuts and seasonal fruit.',
+        ingredients: ['Greek yogurt', 'Nuts', 'Fruit'],
+        calories: 180,
+        nutrition: { protein: 12, carbs: 16, fat: 6 },
+        image: 'https://placehold.co/600x400?text=Yogurt+Parfait'
+      }
+    ]
   }
 ];
