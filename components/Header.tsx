@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import logo from '../assets/Logo.png';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,10 +30,9 @@ const Header: React.FC = () => {
           {/* Logo Section */}
           <div className="flex items-center space-x-2 cursor-pointer" onClick={() => scrollTo('hero')}>
             <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center overflow-hidden">
-               {/* Simulating the logo from prompt description with a placeholder or icon */}
-               <img src="https://placehold.co/100x100/1b4d3e/ffffff?text=N" alt="Nutraahi Logo" className="object-cover w-full h-full" />
+               <img src={logo} alt="Nutraahi Logo" className="object-cover w-full h-full" />
             </div>
-            <span className="text-xl font-bold tracking-wide">nutraahi</span>
+            <span className="text-xl font-bold tracking-wide">Nutraahi</span>
           </div>
 
           {/* Desktop Nav */}

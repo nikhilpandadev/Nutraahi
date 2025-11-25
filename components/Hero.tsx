@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, CheckCircle } from 'lucide-react';
+import logo from '../assets/Logo.png';
 
 const Hero: React.FC = () => {
   const scrollTo = (id: string) => {
@@ -20,11 +21,11 @@ const Hero: React.FC = () => {
           <div className="flex justify-center mb-6">
              {/* Main Logo Display */}
              <div className="w-24 h-24 md:w-32 md:h-32 bg-nutra-green rounded-full flex items-center justify-center shadow-lg">
-                <span className="text-white text-4xl md:text-5xl font-bold">n</span>
+                <img src={logo} alt="Nutraahi Logo" className="object-cover w-full h-full" />
              </div>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-nutra-green tracking-tight mb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-nutra-green tracking-tight mb-4" style={{ fontFamily: 'cursive, Poppins, sans-serif' }}>
             Nutraahi
             <span className="block text-xl md:text-2xl font-medium text-nutra-orange mt-2 italic">
               your nutrition companion
